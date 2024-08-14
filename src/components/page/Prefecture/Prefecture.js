@@ -18,7 +18,7 @@ const Prefecture = () => {
             if (prefecture) {
                 try {
                     const response = await axios.get(
-                        'http://localhost/api/travel_skies/get_prefecture_weather',
+                        'process.env.NEXT_PUBLIC_BACKEND_URL/api/travel_skies/get_prefecture_weather',
                         {
                             params: { prefecture: decodedPrefecture },
                         },

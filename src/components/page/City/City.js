@@ -33,7 +33,7 @@ const City = () => {
                 console.log(decodedCity)
                 try {
                     const response = await axios.get(
-                        'http://localhost/api/travel_skies/get_city_weather',
+                        'process.env.NEXT_PUBLIC_BACKEND_URL/api/travel_skies/get_city_weather',
                         {
                             params: { city: decodedCity },
                         },
