@@ -12,7 +12,7 @@ const City = () => {
     const [dailyWeather, setDailyWeather] = useState([])
     const [pastWeather, setPastWeather] = useState([])
     const [tomorrowWeather, setTomorrowWeather] = useState([])
-    const backUrl = `http://52.196.93.203`
+    const backUrl = `https://travel-skies.work`
     // URLパラメータをデコードする
     const decodeParam = param => decodeURIComponent(param)
 
