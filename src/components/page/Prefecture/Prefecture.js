@@ -4,7 +4,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useParams } from 'next/navigation'
 import PrefectureImage from './PrefectureImage'
-import WeatherCard from '@/components/ui/WeatherCard'
+// import WeatherCard from '@/components/ui/WeatherCard'
 
 const Prefecture = () => {
     const { prefecture } = useParams()

@@ -1,7 +1,7 @@
-import Logo from '@/components/base/Logo'
 import Chevrons from '@/components/base/Chevrons'
 
-const Header = ({ active = false, children, ...props }) => {
+// const Header = ({ active = false, children, ...props }) => {
+const Header = () => {
     return (
         <>
             <div className="bg-white  border-b border-gray-200">

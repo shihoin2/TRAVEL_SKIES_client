@@ -1,8 +1,5 @@
 'use client'
 
-import axios from 'axios'
-import { useState, useEffect } from 'react'
-import { useParams } from 'next/navigation'
 import prefectures from '@/lib/prefectures'
 import WeatherCard from '@/components/ui/WeatherCard'
 

@@ -1,6 +1,5 @@
 'use client'
-import axios from 'axios'
-import { useState } from 'react'
+
 import { usePathname } from 'next/navigation'
 
 const Chevrons = () => {

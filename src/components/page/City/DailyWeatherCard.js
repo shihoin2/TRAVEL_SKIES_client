@@ -1,13 +1,13 @@
 const DailyWeatherCard = ({
     icon,
-    city_name,
+    // city_name,
     weather_time,
-    temperature,
+    // temperature,
     temp_max,
     temp_min,
-    humidity,
-    feels_like,
-    main,
+    // humidity,
+    // feels_like,
+    // main,
     description,
     pop,
 }) => {

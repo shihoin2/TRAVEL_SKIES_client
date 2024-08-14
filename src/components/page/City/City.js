@@ -15,16 +15,16 @@ const City = () => {
     // URLパラメータをデコードする
     const decodeParam = param => decodeURIComponent(param)
 
-    const formatDate = dateString => {
-        const date = new Date(dateString)
+    // const formatDate = dateString => {
+    //     const date = new Date(dateString)
 
-        const year = date.getFullYear()
-        const month = date.getMonth() + 1
-        const day = date.getDate()
-        const hours = date.getHours().toString().padStart(2, '0')
-        const minutes = date.getMinutes().toString().padStart(2, '0')
-        return `${year}/${month}/${day} ${hours}:${minutes}`
-    }
+    //     const year = date.getFullYear()
+    //     const month = date.getMonth() + 1
+    //     const day = date.getDate()
+    //     const hours = date.getHours().toString().padStart(2, '0')
+    //     const minutes = date.getMinutes().toString().padStart(2, '0')
+    //     return `${year}/${month}/${day} ${hours}:${minutes}`
+    // }
 
     useEffect(() => {
         const fetchWeatherData = async () => {

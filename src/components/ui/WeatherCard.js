@@ -1,36 +1,32 @@
 'use client'
 
-import axios from 'axios'
-import { useState, useEffect } from 'react'
-import { useParams } from 'next/navigation'
-import prefectures from '@/lib/prefectures'
 import cityPositions from '@/lib/cityPosition'
 import Link from 'next/link'
 
 const WeatherCard = ({
     weather_icon,
     city_name,
-    weather_time,
-    temperature,
+    // weather_time,
+    // temperature,
     temp_max,
     temp_min,
     humidity,
-    feels_like,
-    main,
-    description,
+    // feels_like,
+    // main,
+    // description,
     decodedPrefecture,
 }) => {
     const position = cityPositions[city_name]
-    const formatDate = dateString => {
-        const date = new Date(dateString)
+    // const formatDate = dateString => {
+    //     const date = new Date(dateString)
 
-        const year = date.getFullYear()
-        const month = date.getMonth() + 1
-        const day = date.getDate()
-        const hours = date.getHours().toString().padStart(2, '0')
-        const minutes = date.getMinutes().toString().padStart(2, '0')
-        return `${year}/${month}/${day} ${hours}:${minutes}`
-    }
+    //     const year = date.getFullYear()
+    //     const month = date.getMonth() + 1
+    //     const day = date.getDate()
+    //     const hours = date.getHours().toString().padStart(2, '0')
+    //     const minutes = date.getMinutes().toString().padStart(2, '0')
+    //     return `${year}/${month}/${day} ${hours}:${minutes}`
+    // }
 
     return (
         <>
