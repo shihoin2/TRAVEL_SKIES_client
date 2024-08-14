@@ -5,11 +5,12 @@ import { useState, useEffect } from 'react'
 
 const Home = () => {
     const [regions, setRegions] = useState({})
+    const backUrl = process.env.NEXT_PUBLIC_FRONT_END_URL
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    `process.env.NEXT_PUBLIC_BACKEND_URL/api/travel_skies/get_prefecture`,
+                    `${backUrl}/api/travel_skies/get_prefecture`,
                 )
                 console.log(response.data)
                 setRegions(response.data)
