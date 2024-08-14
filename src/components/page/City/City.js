@@ -12,6 +12,7 @@ const City = () => {
     const [dailyWeather, setDailyWeather] = useState([])
     const [pastWeather, setPastWeather] = useState([])
     const [tomorrowWeather, setTomorrowWeather] = useState([])
+    const backUrl = `http://52.196.93.203`
     // URLパラメータをデコードする
     const decodeParam = param => decodeURIComponent(param)
 
@@ -33,7 +34,7 @@ const City = () => {
                 console.log(decodedCity)
                 try {
                     const response = await axios.get(
-                        'process.env.NEXT_PUBLIC_BACKEND_URL/api/travel_skies/get_city_weather',
+                        `${backUrl}/api/travel_skies/get_city_weather`,
                         {
                             params: { city: decodedCity },
                         },
