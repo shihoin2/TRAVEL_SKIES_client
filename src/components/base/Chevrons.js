@@ -6,7 +6,8 @@ const Chevrons = () => {
     const pathName = usePathname()
     const decodeParam = param => decodeURIComponent(param)
 
-    const frontUrl = process.env.NEXT_PUBLIC_FRONT_END_URL
+    const frontUrl = `https://travel-skies-client.vercel.app`
+
     const url = `${frontUrl}/${pathName}`
     const parsedUrl = new URL(url)
     const pathSegments = parsedUrl.pathname.split('/').filter(Boolean) // 空の要素を削除

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 
 const Home = () => {
     const [regions, setRegions] = useState({})
-    const backUrl = process.env.NEXT_PUBLIC_FRONT_END_URL
+    const backUrl = `http://52.196.93.203`
     useEffect(() => {
         const fetchData = async () => {
             try {
