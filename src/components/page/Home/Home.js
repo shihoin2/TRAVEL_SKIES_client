@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 
 const Home = () => {
     const [regions, setRegions] = useState({})
-    const backUrl = `http://52.196.93.203`
+    const backUrl = `https://travel-skies.work`
     useEffect(() => {
         const fetchData = async () => {
             try {

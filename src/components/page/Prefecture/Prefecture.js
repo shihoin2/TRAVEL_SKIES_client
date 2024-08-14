@@ -10,7 +10,7 @@ const Prefecture = () => {
     const { prefecture } = useParams()
     const [weather, setWeather] = useState([])
 
-    const backUrl = `http://52.196.93.203`
+    const backUrl = `https://travel-skies.work`
     const decodeParam = param => decodeURIComponent(param)
     const decodedPrefecture = decodeParam(prefecture)
 
