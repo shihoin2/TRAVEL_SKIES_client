@@ -9,7 +9,7 @@ const Home = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost/api/travel_skies/get_prefecture`,
+                    `process.env.NEXT_PUBLIC_BACKEND_URL/api/travel_skies/get_prefecture`,
                 )
                 console.log(response.data)
                 setRegions(response.data)
