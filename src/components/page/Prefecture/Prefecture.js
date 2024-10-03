@@ -10,6 +10,7 @@ const Prefecture = () => {
     const { prefecture } = useParams()
     const [weather, setWeather] = useState([])
 
+    const backUrl = `https://travel-skies.work`
     const decodeParam = param => decodeURIComponent(param)
     const decodedPrefecture = decodeParam(prefecture)
 
@@ -18,7 +19,7 @@ const Prefecture = () => {
             if (prefecture) {
                 try {
                     const response = await axios.get(
-                        'http://localhost/api/travel_skies/get_prefecture_weather',
+                        `${backUrl}/api/travel_skies/get_prefecture_weather`,
                         {
                             params: { prefecture: decodedPrefecture },
                         },

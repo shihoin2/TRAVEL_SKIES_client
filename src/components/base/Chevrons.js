@@ -6,14 +6,16 @@ const Chevrons = () => {
     const pathName = usePathname()
     const decodeParam = param => decodeURIComponent(param)
 
-    const url = `http://localhost:3000/${pathName}`
+    const frontUrl = `https://travel-skies-client.vercel.app`
+
+    const url = `${frontUrl}/${pathName}`
     const parsedUrl = new URL(url)
     const pathSegments = parsedUrl.pathname.split('/').filter(Boolean) // 空の要素を削除
     return (
         <>
             <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
                 {/* banner - start */}
-                <div className="relative flex flex-wrap bg-[#0d71e7] px-4 py-3 sm:flex-nowrap sm:items-left sm:justify-left sm:gap-3 sm:pr-8 md:px-8">
+                <div className="relative flex flex-wrap  bg-[#77C7EC] px-4 py-3 sm:flex-nowrap sm:items-left sm:justify-left sm:gap-3 sm:pr-8 md:px-8">
                     <div className="order-1 mb-2 inline-block w-11/12 max-w-screen-sm text-sm text-white sm:order-none sm:mb-0 sm:w-auto md:text-base">
                         <ol className="flex items-center whitespace-nowrap">
                             <li>
